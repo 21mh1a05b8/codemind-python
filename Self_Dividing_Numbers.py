@@ -1,7 +1,7 @@
 def self(n):
-    t=n
     c=0
     d=0
+    t=n
     while n>0:
         r=n%10
         if r!=0 and t%r==0:
@@ -14,6 +14,3 @@ x=int(input())
 y=int(input())
 for i in range(x,y+1):
     self(i)
-    
-        
-    
