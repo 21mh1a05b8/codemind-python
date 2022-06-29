@@ -7,5 +7,5 @@ for i in l:
             r.append(i)
 if len(r)==0:
     print("-1")
-for i in r:
-    print(i,end=" ")
+else:
+    print(*r)
