@@ -1,11 +1,14 @@
 n=int(input())
-x=list(map(int,input().split()))
+l=list(map(int,input().split()))
 a,b=map(int,input().split())
-l=max(x)
-for i in x:
+r=[]
+f=0
+for i in l:
     if i>=a and i<=b:
-        if i==l:
-            print("-1")
-            break
+        f+=1
+    else:
+        r.append(i)
+if len(r)==0:
+    print("-1")
 else:
-    print(l)
+    print(max(r))
