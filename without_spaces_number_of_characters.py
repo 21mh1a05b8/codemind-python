@@ -1,6 +1,6 @@
 n=input()
-k=len(n)
+c=0
 for i in n:
-    if i.isspace()==True:
-        k-=1
-print(k)
+    if i.isspace()==False:
+        c+=1
+print(c)
