@@ -1,17 +1,16 @@
 n=input()
-v="aeiouAEIOU"
+n=n.lower()
 n=n.split()
+v="aeiou"
+f=0
 r=[]
-c=0
 for i in n:
-    m=[]
+    c=0
     for j in i:
         if j in v:
-            m.append(j)
-    r.append(len(m))
-k=min(r)
-c=0
+            c+=1
+    r.append(c)
 for i in r:
-    if i==k:
-        c+=1
-print(c)
+    if i==min(r):
+        f+=1
+print(f)
