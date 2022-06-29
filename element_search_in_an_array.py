@@ -1,12 +1,11 @@
 n=int(input())
-a=list(map(int,input().split()))
-x=int(input())
+l=list(map(int,input().split()))
+k=int(input())
 f=0
-for i in a:
-    if i==x:
+for i in l:
+    if i==k:
+        print(True)
         f+=1
         break
-if f==1:
-    print("True")
-else:
-    print("False")
+if f==0:
+    print(False)
