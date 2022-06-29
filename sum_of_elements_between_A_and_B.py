@@ -1,8 +1,9 @@
 n=int(input())
-a=list(map(int,input().split()))
-A,B=map(int,input().split())
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+r=[]
 sum=0
-for i in a:
-    if i>=A and i<=B:
+for i in l:
+    if i>=a and i<=b:
         sum=sum+i
 print(sum)
