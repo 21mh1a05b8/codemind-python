@@ -1,12 +1,12 @@
 n=input()
-v="aeiouAEIOU"
+n=n.lower()
+v="aeiou"
 n=n.split()
 r=[]
-c=0
 for i in n:
-    m=[]
+    c=0
     for j in i:
         if j in v:
-            m.append(j)
-    r.append(len(m))
+            c+=1
+    r.append(c)
 print(*r)
