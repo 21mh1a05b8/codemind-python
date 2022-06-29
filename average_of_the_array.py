@@ -1,7 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
+l=list(map(int,input().split()))
 sum=0
-for i in a:
-    sum=sum+i
-avg=sum/n
+for i in l:
+        sum=sum+i
+avg=sum/len(l)
 print("%.2f"%avg)
