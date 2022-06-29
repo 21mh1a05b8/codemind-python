@@ -1,13 +1,13 @@
 n=int(input())
 l=list(map(int,input().split()))
 r=[]
-c=0
 for i in l:
     i=str(i)
     k=len(i)
     r.append(k)
-m=min(r)
+a=min(r)
+c=0
 for i in r:
-    if i==m:
+    if i==a:
         c+=1
 print(c)
