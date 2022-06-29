@@ -1,9 +1,9 @@
 n=input()
-f=0
+c=0
 for i in n:
-    if n.count(i)>1:
-        f=1
-if f==0:
+    if n.count(i)==1:
+        c+=1
+if c==len(n):
     print(True)
 else:
     print(False)
