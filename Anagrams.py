@@ -1,12 +1,12 @@
 n=input()
-n=n.lower()
 m=input()
+n=n.lower()
 m=m.lower()
-f=0
-for i in n:
-    if i not in m:
-        f=1
-if f==0:
+n=list(n)
+m=list(m)
+n=sorted(n)
+m=sorted(m)
+if n==m:
     print(True)
 else:
     print(False)
