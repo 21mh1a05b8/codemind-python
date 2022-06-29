@@ -1,8 +1,8 @@
 n=input()
-k=input()
+c=input()
 f=0
-for i in range(len(n)) :
-    if n[i]==k:
+for i in range(len(n)):
+    if n[i]==c:
         print(True)
         print(i)
         f+=1
