@@ -1,6 +1,6 @@
-a=input()
+n=input()
 c=0
-for i in a:
-    if ord(i)==32:
+for i in n:
+    if i.isspace()==True:
         c+=1
 print(c)
