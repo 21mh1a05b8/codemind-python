@@ -1,6 +1,7 @@
-a,b=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-l=set(x).intersection(y)
-z=set(x).union(y)
-print(len(z)-len(l))
+n,m=map(int,input().split())
+l1=set(map(int,input().split()))
+l2=set(map(int,input().split()))
+k=l1.intersection(l2)
+m=l1.union(l2)
+l=m-k
+print(len(l))
