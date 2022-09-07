@@ -1,16 +1,9 @@
 n=int(input())
-a=list(map(int,input().split()))
-sum=0
-sum1=0
-h1=len(a)//2
-for i in range(len(a)):
-    if i<h1:
-        sum=sum+a[i]
-for i in range(h1,n):
-    sum1=sum1+a[i]
-if sum1>sum:
-    print(sum1-sum)
-else:
-    print(sum-sum1)
-    
-        
+l=list(map(int,input().split()))
+s1=0
+s2=0
+for i in range(n//2):
+    s1+=l[i]
+for i in range(n//2,n):
+    s2+=l[i]
+print(abs(s1-s2))   
