@@ -1,4 +1,4 @@
-def prime_range(x,y):
+def prime(x,y):
     count=0
     for i in range(x,y+1):
         if i>1:
@@ -10,6 +10,4 @@ def prime_range(x,y):
     print(count)
 x=int(input())
 y=int(input())
-prime_range(x,y)
-    
-
+prime(x,y)
