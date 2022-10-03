@@ -1,7 +1,7 @@
 n=input()
-n=n.casefold()
-r=reversed(n)
-if list(n)==list(r):
-   print(True)
+n=n.lower()
+k=n[::-1]
+if n==k:
+    print(True)
 else:
-   print(False)
+    print(False)
