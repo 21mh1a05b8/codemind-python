@@ -1,19 +1,15 @@
-def count(n):
-    if n<0:
-        n=n*-1
-    c=0
-    while n:
-        r=n%10
-        c+=1
-        n=n//10
-    return c
 n=int(input())
 l=list(map(int,input().split()))
 r=[]
 for i in l:
-    k=count(i)
-    r.append(k)
+    if i<0:
+        i=i*-1
+    r.append(len(str(i)))
 m=max(r)
 for i in l:
-    if m==count(i):
+    if i<0:
+        k=i*-1
+    else:
+        k=i
+    if len(str(k))==m:
         print(i,end=" ")
