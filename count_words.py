@@ -1,10 +1,8 @@
-n=input()
-n=n.lower()
-n=n.split()
-r=[]
-v="aeiou"
-for i in n:
-    for j in v:
-        if i.startswith(j):
-            r.append(i)
-print(len(r))
+s=input()
+s=list(s.split())
+c=0
+
+for i in s:
+    if(i[0] in 'aeiouAEIOU' and i[len(i)-1] in 'qwrtypsdfghjklmnbvcxzQWSRDTFYGHJKPLMNBVCXZ'):
+        c+=1
+print(c)
