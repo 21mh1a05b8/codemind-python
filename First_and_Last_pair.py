@@ -1,8 +1,8 @@
 n=int(input())
-l=list(map(int,input().split()))
-r=[]
+a=list(map(int,input().split()))
 for i in range(n//2):
-    print(l[i],end=" ")
-    print(l[n-1-i],end=" ")
+    print(a[i],end=" ")
+    print(a[n-1-i],end=" ")
 if n%2!=0:
-    print(l[n//2],end=" 0")
+    print(a[n//2],end=" ")
+    print("0")
