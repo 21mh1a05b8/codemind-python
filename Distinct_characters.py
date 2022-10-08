@@ -1,10 +1,10 @@
-n=input()
-n=n.lower()
-r=[]
-for i in n:
-    if n.count(i)==1:
-        if i!=" ":
-            r.append(i)
-r=sorted(r)
-for i in r:
+s=input()
+s=s.lower()
+s=list(s)
+c=[]
+for i in s:
+    if(s.count(i)==1 and i!=' '):
+        c.append(i)
+c=sorted(c)
+for i in c:
     print(i,end="")
