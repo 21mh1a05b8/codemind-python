@@ -1,6 +1,10 @@
 n=input()
-n=list(set(n.lower()))
-n=sorted(n)
+n=n.lower()
+r=[]
 for i in n:
-    if i!=" " :
-        print(i,end="")
+    if n.count(i)==1:
+        if i!=" ":
+            r.append(i)
+r=sorted(r)
+for i in r:
+    print(i,end="")
