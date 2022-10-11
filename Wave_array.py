@@ -19,5 +19,3 @@ if c==n-2:
     print("yes")
 else:
     print("no")
-        
-            
