@@ -17,4 +17,3 @@ while i<len(c) or j<len(l):
         j+=1
 if n%2!=0:
     print("0")
-        
