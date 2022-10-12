@@ -1,0 +1,7 @@
+m=input()
+n=m.replace(" ","")
+p=max(n)
+k=min(n)
+i=n.count(p)
+j=n.count(k)
+print(k,j,p,i)
