@@ -14,3 +14,4 @@ for i in k:
             l+=i
 l=sorted(l)
 print("".join(l))
+    
