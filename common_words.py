@@ -1,12 +1,10 @@
-n=input()
-m=input()
-n=n.lower()
-m=m.lower()
-n=n.split()
-m=m.split()
-r=[]
-for i in m:
-    for j in n:
+s1=input()
+s2=input()
+s1=s1.lower()
+s2=s2.lower()
+s1=s1.split()
+s2=s2.split()
+for i in s2:
+    for j in s1:
         if i==j:
-            r.append(j)
-print(*r)
+            print(i,end=" ")
